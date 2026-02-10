@@ -4,14 +4,38 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Fran's Flowers | Boutique Flower Shop in San Francisco</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght@24,400,0,0"
+    />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
-  <body>
+  <body id="top">
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <a class="logo" href="#top">Fran’s Flowers</a>
+
+      <!-- CSS-only toggle -->
+      <input type="checkbox" id="nav-check" class="nav-check" />
+      <label for="nav-check" class="nav-toggle" aria-label="Toggle navigation">
+        <span class="material-symbols-outlined">menu</span>
+      </label>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#specials">Specials</a></li>
+        <li><a href="#visit">Visit Us</a></li>
+      </ul>
+    </nav>
+
     <header>
       <div class="header-content">
         <h1><span class="accent">Fran's</span> Flowers</h1>
@@ -28,7 +52,7 @@
     </div>
 
     <main>
-      <section class="about-us">
+      <section class="about-us" id="about">
         <h2><span class="accent">About</span> Us</h2>
         <p>
           Fran's Flowers was founded in 1995 by Francine Miller to share joy,
@@ -41,7 +65,7 @@
         <p>Thank you for helping us grow kindness one flower at a time.</p>
       </section>
 
-      <section class="specials">
+      <section class="specials" id="specials">
         <h2><span class="accent">Weekly</span> Specials</h2>
         <div class="specials-list">
           <article class="special-offer">
@@ -67,7 +91,31 @@
         </div>
       </section>
 
-      <section class="visit-us">
+      <!-- TESTIMONIALS -->
+      <section class="testimonials" id="testimonials">
+        <h2><span class="accent">Customer</span> Love</h2>
+
+        <div class="testimonial-grid">
+          <figure class="testimonial-card">
+            <blockquote>
+              “The bouquet lasted over a week and looked even better than the
+              photos. The staff was so kind and helped me pick the perfect
+              flowers.”
+            </blockquote>
+            <figcaption>— Maya R., Mission District</figcaption>
+          </figure>
+
+          <figure class="testimonial-card">
+            <blockquote>
+              “I ordered last-minute for my mom’s birthday and they made it
+              happen. Beautiful arrangement and super easy pickup!”
+            </blockquote>
+            <figcaption>— Jordan K., San Francisco</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="visit-us" id="visit">
         <h2><span class="accent">Visit</span> Us</h2>
         <div class="contact-info">
           <p>Come in and say hi!</p>
@@ -84,15 +132,29 @@
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.144965296929!2d-122.4230293!3d37.7689366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e3a37128e21%3A0xf85bfc7fef295b98!2s123%20Valencia%20St%2C%20San%20Francisco%2C%20CA%2094103!5e0!3m2!1sen!2sus!4v1722345678901!5m2!1sen!2sus"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
+          title="Map to Fran's Flowers"
         ></iframe>
       </section>
     </main>
 
+    <!-- FOOTER -->
     <footer>
       <div class="footer-content">
-        <p>&copy; 2025 Fran's Flowers LLC.</p>
-        <p>Brightening lives one flower at a time</p>
+        <div class="footer-left">
+          <p>&copy; 2025 Fran's Flowers LLC.</p>
+          <p>Brightening lives one flower at a time</p>
+        </div>
+
+        <div class="footer-links">
+          <p class="footer-heading">Explore</p>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#specials">Specials</a></li>
+            <li><a href="#visit">Visit Us</a></li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
 </html>
+
